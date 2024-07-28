@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name ="author" content="miranda">
+		<title>test S2</title>		
+	</head>
+	<body>
+        <div>
+            <input type="button" value="click" onclick="mostrar()">
+        </div>
+        <script>
+        // Exercici 1
+     
+        const add = (a, b) => a + b;
+
+        // Exercici 2
+
+        const randomNumber = () => Math.floor(Math.random() * 100);
+
+
+        
+        // Exercici 3
+        
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+            
+            greet() {
+                const message = () => console.log(`Hola, ${this.name}`);
+                message();
+            };
+        }
+        
+        const maria = new Person('Maria');
+        maria.greet(); 
+        
+        
+        console.log(randomNumber());
+        console.log(add(2, 3));
+        </script>
+		
+		
+</body>
+</html>
