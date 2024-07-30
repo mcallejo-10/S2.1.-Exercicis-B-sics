@@ -1,2 +1,2 @@
-# S2.1.-Exercicis-B-sics
+# S2.1. Exercicis Bàsics
 Exercicis bàsic de Javascript
