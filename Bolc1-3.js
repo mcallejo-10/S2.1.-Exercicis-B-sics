@@ -26,29 +26,43 @@ function sumar(num1, num2) {
 calculadora(8 , 2, sumar);
 
 
-// Exercici 3
+// Exercici 3 !!!!
 
 function esperarISaludar(nom, myCallback) {
-   const timeout = setTimeout(myCallback(nom), 4000);
+   setTimeout(myCallback(nom), 4000);
+   setTimeout(myCallback(nom), 30000)
 }
 
 function saludar(nom) {
     console.log(`Hola ${nom}!!`);
 }
 
-esperarISaludar('Pep', saludar)
+esperarISaludar('Pepi', saludar)
+
+
+// Exercici 4
+
+function processarElements(arr, myCallback) {
+    arr.forEach(myCallback);
+}
+
+let arr = ['hola', 'que' , 'fas', '?']
+
+processarElements(arr, mostrar);
+
+// Exercici 5
+
+function processarCadena(str, myCallback) {
+    str = str.toUpperCase();
+    myCallback(str);    
+}
+
+processarCadena("holA que dius?", mostrar);
+
 /*
+Escriu una funció processarCadena que accepti dos paràmetres: una cadena de caràcters i una funció de callback. 
+La funció processarCadena ha de convertir la cadena a majúscules i llavors invocar la funció de callback amb la cadena transformada.
 
-Exercici 3
-Ús de callbacks en funcions asíncrones: Escriu una funció esperarISaludar 
-que accepti dos paràmetres: un nom i una funció de callback. 
-La funció ha d'esperar 2 segons i llavors invocar 
-la funció de callback, passant el nom com a paràmetre.
-
-
-Exercici 4
-Callbacks amb arrays: Escriu una funció processarElements que accepti dos paràmetres: un array i una funció de callback. 
-La funció processarElements ha d'invocar la funció de callback per cada element de l'array.
 
 
 */
