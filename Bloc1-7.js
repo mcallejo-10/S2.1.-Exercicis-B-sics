@@ -1,21 +1,51 @@
-"use strict"
+"use strict";
 
-// Exercici 1
+// Exercici 1 i 2
 
+let promesa = new Promise((resolve, reject) => {
+  setTimeout(() => { resolve('Hola, món') }, 2000) });
+
+promesa.then( (value) => { console.log(value) } )
+console.log(promesa);
+
+// Exercici 3
+
+let input = "Hola";
+let promesa3 = new Promise((resolve, reject) => {
+  if (input == "Hola") {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  } else {
+    reject('rejected');
+  }
+});
+
+
+promesa3.then((value) => { console.log(value) }, 
+              (value) => { console.log(value) });
+
+console.log(promesa3);
+
+//Exercici 4
+
+async function myAsynic() {
+  const result = await promesa();
+  console.log('await:', result);
+}
+
+myAsynic();
 
 
 /*
 
-Creació d'una Promesa: Crea una promesa que es resolgui després de 2 segons 
-i que retorni la cadena de text 'Hola, món'.
 
-Exercici 2
-Utilització d'una Promesa: Utilitza la promesa creada en l'exercici anterior. 
-Crea un .then que imprimeixi el resultat a la consola.
 
 Exercici 3
-Promesa amb reject: Crea una promesa que es resolgui després de 2 segons si l'input és igual a 'Hola',
+Promesa amb reject: Crea una promesa que es resolgui després de 2 segons
+ si l'input és igual a 'Hola',
  i que la rebutgi si l'input és qualsevol altra cosa.
+
 
 Exercici 4
 Ús de async/await: Escriu una funció asíncrona que utilitzi la funció await 
