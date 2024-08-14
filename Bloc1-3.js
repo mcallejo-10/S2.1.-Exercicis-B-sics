@@ -29,8 +29,7 @@ calculadora(8 , 2, sumar);
 // Exercici 3 !!!!
 
 function esperarISaludar(nom, myCallback) {
-   setTimeout(myCallback(nom), 4000);
-   setTimeout(myCallback(nom), 30000)
+   setTimeout(() => myCallback(nom), 4000);
 }
 
 function saludar(nom) {
@@ -50,6 +49,7 @@ let arr = ['hola', 'que' , 'fas', '?']
 
 processarElements(arr, mostrar);
 
+
 // Exercici 5
 
 function processarCadena(str, myCallback) {
@@ -58,11 +58,3 @@ function processarCadena(str, myCallback) {
 }
 
 processarCadena("holA que dius?", mostrar);
-
-/*
-Escriu una funció processarCadena que accepti dos paràmetres: una cadena de caràcters i una funció de callback. 
-La funció processarCadena ha de convertir la cadena a majúscules i llavors invocar la funció de callback amb la cadena transformada.
-
-
-
-*/

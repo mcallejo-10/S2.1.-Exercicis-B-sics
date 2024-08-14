@@ -37,6 +37,10 @@ function printNumbers(arr) {
 
  const time = setTimeout(() => console.log('Hola que ase?'), 3000); 
 
+
+
+ // Comprobacions
+
 console.log(add(2, 3));
 console.log(randomNumber());
 const person = new Person('David');
