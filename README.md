@@ -16,7 +16,7 @@ HTML y JavaScript
 ## Ejecución
   * Clonar el repositorio: git clone https://github.com/mcallejo-10/S2.1.-Exercicis-Basics.git
   * Abrir el html en tu navegador.
-  * Descomentar el script del bloque que queremos visualizar. 
+  * Abrir la consola para ver los resultados. 
   
 
 

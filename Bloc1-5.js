@@ -1,5 +1,7 @@
 "use strict";
 
+//Bloc 1.5: Array transformations
+
 // Exercici 1
 
 let numbers1 = [1, 2, 3, 4];

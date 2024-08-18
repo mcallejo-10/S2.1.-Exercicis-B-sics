@@ -1,5 +1,7 @@
 "use strict";
 
+//Bloc 1.7: Promises & Async/Await
+
 // Exercici 1 i 2
 
 const promesa = new Promise((resolve) => {

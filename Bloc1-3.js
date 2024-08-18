@@ -1,6 +1,8 @@
 "use strict"
 
-// Execici 1
+//Bloc 1.3: Callbacks
+
+// Exercici 1
 
 function processar(num, myCallback) {
     myCallback(num);
@@ -26,7 +28,7 @@ function sumar(num1, num2) {
 calculadora(8 , 2, sumar);
 
 
-// Exercici 3 !!!!
+// Exercici 3
 
 function esperarISaludar(nom, myCallback) {
    setTimeout(() => myCallback(nom), 4000);
@@ -45,9 +47,9 @@ function processarElements(arr, myCallback) {
     arr.forEach(myCallback);
 }
 
-let arr = ['hola', 'que' , 'fas', '?']
+const arr2 = ['hola', 'que' , 'fas', '?']
 
-processarElements(arr, mostrar);
+processarElements(arr2, mostrar);
 
 
 // Exercici 5

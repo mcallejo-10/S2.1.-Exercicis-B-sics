@@ -1,8 +1,10 @@
 "use strict";
 
-let noms = ["Anna", "Bernat", "Clara"];
+//Bloc 1.6: Array loops
 
 // Exercici 1
+
+let noms = ["Anna", "Bernat", "Clara"];
 
 noms.forEach((nom) => console.log(nom));
 

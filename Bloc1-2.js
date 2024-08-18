@@ -1,5 +1,8 @@
 "use strict"
 
+
+// Bloc 1.2: Operador ternari
+
 // Exercici 1
 function potConduir(edat) {
     return edat >= 18 ? 'Pots conduir' : 'No pots conduir';
@@ -35,7 +38,7 @@ function trobarMaxim(a, b, c) {
 
 function parOImpar(arr) {
     for (let i = 0; i < arr.length; i++) {
-       console.log((arr[i] % 2 == 0) ? 'és parell' : 'és imparell');
+       console.log(`${arr[i]} és ${(arr[i] % 2 == 0) ? 'és parell' : 'és imparell'}`);
     }
 }
 

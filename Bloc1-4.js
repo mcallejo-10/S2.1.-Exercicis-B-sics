@@ -1,5 +1,7 @@
 "use strict";
 
+// Bloc 1.4: Rest & Spread operators
+
 // Exercici 1
 
 let array1 = [1, 3, "a", "lklk"];
@@ -26,14 +28,14 @@ const obj1 = { nom: "Miranda", cognom: "Callejón" };
 
 const obj2 = { ...obj1 };
 
-console.log(obj2);
+console.log('Objecte 1 depres del Spread:', obj1, '\n', 'Objecte 2 creat depres del Spread:', obj2);
 
 
 // Exercici 4
 
-const arr = ["hola", "caracola", "que", "pasa", "mufasa"];
+const arr3 = ["hola", "caracola", "que", "pasa", "mufasa"];
 
-const [elem1, elem2, ...rest] = arr;
+const [elem1, elem2, ...rest] = arr3;
 
 console.log("primer element:", elem1);
 console.log("segon element:", elem2);
@@ -43,10 +45,8 @@ console.log("resta d'elements:", rest);
 // Exercici 5
 
 function mySpread(a, b, c) {
-  console.log(a);
-  console.log(b);
-  console.log(c);
-}
+  console.log(a, b , c);
+ }
 
 const array = ["que", "pasa", "mufasa"];
 

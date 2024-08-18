@@ -1,5 +1,8 @@
 "use strict"
 
+
+// Bloc 1.1: Arrow functions
+
 // Exercici 1 //
 
 const add = (a, b) => a + b;
@@ -27,8 +30,8 @@ class Person {
 
 function printNumbers(arr) {
   for(let i = 0; i < arr.length; i++) {
-    let num = (arr) => console.log(arr[i]);
-    num(arr);
+    let num = () => console.log(arr[i]);
+    num();
   }
 }
 
